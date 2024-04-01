@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class BinaryConverter {
     public static int bin2Dec(String binaryString) throws BinaryFormatException {
         int decimal = 0;
+        /* Determines whether or not number is binary*/
         for (int i = 0; i < binaryString.length(); i++) {
             char ch = binaryString.charAt(i);
             if (ch == '0' || ch == '1') {
@@ -16,6 +17,7 @@ public class BinaryConverter {
 
    public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
+       /* Gets user input for number*/
     System.out.print("Enter a binary number: ");
     String binaryString = scanner.nextLine();
 
