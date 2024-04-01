@@ -42,7 +42,8 @@ public class Triangle extends GeometricObject {
     public void setSide3(double side3) {
         this.side3 = side3;
     }
-
+    
+    /* Equations for triangle*/
     public double getArea() {
         double s = (side1 + side2 + side3) / 2.0;
         return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
@@ -57,7 +58,8 @@ public class Triangle extends GeometricObject {
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        
+        /* Prompts user to enter in values for triangle sides, color, and if it's filled*/
         System.out.print("Enter three sides of the triangle: ");
         double side1 = scanner.nextDouble();
         double side2 = scanner.nextDouble();
